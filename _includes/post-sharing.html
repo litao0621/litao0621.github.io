@@ -9,13 +9,13 @@
     {% assign title = title | uri_escape %}
     {% assign url = page.url | absolute_url | url_encode %}
 
-    {% for share in site.data.share.platforms %}
+    <!-- {% for share in site.data.share.platforms %}
       {% assign link = share.link | replace: 'TITLE', title | replace: 'URL', url %}
         <a href="{{ link }}" data-toggle="tooltip" data-placement="top"
           title="{{ share.type }}" target="_blank" rel="noopener" aria-label="{{ share.type }}">
           <i class="fa-fw {{ share.icon }}"></i>
         </a>
-    {% endfor %}
+    {% endfor %} -->
 
     <i id="copy-link" class="fa-fw fas fa-link small"
         data-toggle="tooltip" data-placement="top"
